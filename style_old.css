@@ -1,0 +1,97 @@
+.container {
+  height: 100%;
+  width: 100%;
+  border: 1px aqua solid;
+  padding: 20px;
+  background: #eee;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  background: #ddd;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.top-menu {
+  width: 100%;
+  height: 40px;
+  background: #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 50px;
+  height: 20px;
+  margin-right: 80px;
+  background: azure;
+  padding: 10px;
+  transition: 2s width;
+}
+
+.menu-item:hover {
+  background: darksalmon;
+  cursor: pointer;
+  /* width: 100%; */
+}
+
+.rotate {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 100px;
+  height: 100px;
+  background: darkslateblue;
+  transition: width 2s, height 2s, background 2s, transform 2s;
+}
+
+.rotate:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 200px;
+  height: 200px;
+  background: darkslategrey;
+}
+/* 
+.form {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  height: 220px;
+  width: 400px;
+  padding: 10px;
+  background: #e1e1e1;
+}
+
+.form form {
+  display: flex;
+  height: 200px;
+  width: 199px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form form input[type="text"],
+.form form input[type="password"] {
+  width: 170px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form form input[type="button"] {
+  width: 100px;
+  height: 30px;
+  background: #d5ffe2;
+  border: 0;
+}
+
+.form form input[type="button"]:hover {
+  background: #ccc;
+  cursor: pointer;
+} */
