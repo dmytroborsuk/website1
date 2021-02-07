@@ -24,4 +24,23 @@ async function getArtists(id) {
     
     return result;
  }
+
+ async function getArtist(id) {
+   let result;
+
+   let response = await fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/' + id );
+   result = await response.json();
+   
+   return result;
+}
+
+
+async function getAlbums(id) {
+   let result;
+
+   let response = await fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/' + id + '/albums');
+   result = await response.json();
+   
+   return result;
+}
  

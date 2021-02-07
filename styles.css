@@ -13,3 +13,7 @@
 .figure-caption {
   text-align: center;
 }
+
+.genre-block img {
+  width: 56px;
+}

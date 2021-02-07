@@ -5,33 +5,33 @@ function renderFigure() {
     return figure;
 }
 
-function renderCaption(element) {
+function renderCaption(title) {
     let caption = document.createElement('figcaption');
     caption.className = 'figure-caption';
-    caption.innerText = element.name;
+    caption.innerText = title;
 
     return caption;
 }
 
-function renderLink(element) {
+function renderLink(linkParam) {
     let link = document.createElement('a');
-    link.href = 'genre.html?id=' + element.id;
+    link.href = linkParam;
     return link;
 }
 
-function renderImage(element) {
+function renderImage(imageLink) {
     let image = document.createElement('img');
-    image.src = element.picture;
+    image.src = imageLink;
     image.className = 'img-thumbnail m-2';
 
     return image;
 }
 
-function renderMusicItem(element, container) {
+function renderMusicItem(container, imageParam, nameParam, linkParam) {
     let figure = renderFigure();
-    let caption = renderCaption(element);
-    let image = renderImage(element);
-    let link = renderLink(element);
+    let caption = renderCaption(nameParam);
+    let image = renderImage(imageParam);
+    let link = renderLink(linkParam);
 
     figure.appendChild(image);
     figure.appendChild(caption); 
