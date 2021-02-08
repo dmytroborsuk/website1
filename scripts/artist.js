@@ -3,7 +3,7 @@
     const id = urlParams.get('id');
 
     const artist = await getArtist(id); 
-    const title = document.querySelector('h1');
+    const title = document.getElementById('title');
     title.innerText = artist.name;   
 
     const artistImg = document.getElementById('genre-img');

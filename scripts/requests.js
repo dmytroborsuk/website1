@@ -43,4 +43,12 @@ async function getAlbums(id) {
    
    return result;
 }
- 
+
+async function getAlbum(id) {
+   let result;
+
+   let response = await fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/' + id);
+   result = await response.json();
+   
+   return result;
+}

@@ -17,3 +17,16 @@
 .genre-block img {
   width: 56px;
 }
+
+.genre-block {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  padding: 10px;
+}
+
+.genre-block #title {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
